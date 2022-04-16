@@ -1,6 +1,6 @@
 # Cloud ID.
 variable "yandex-cloud-id" {
-  default = "b1gnlr384lft1ojhej5f"
+  default = "b1g8mq58h421raomnd64"
 }
 
 # Zone.
