@@ -30,7 +30,7 @@ resource "yandex_iam_service_account" "terraform-netology-sa" {
 # Grant permission "storage.editor" on folder "yandex-folder-id" for service account.
 resource "yandex_resourcemanager_folder_iam_member" "terraform-netology-storage-editor" {
   folder_id = yandex_resourcemanager_folder.netology-folder.id
-  role      = "storage.admin"
+  role      = "admin"
   member    = "serviceAccount:${yandex_iam_service_account.terraform-netology-sa.id}"
 }
 
