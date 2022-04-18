@@ -7,3 +7,8 @@ variable "yandex-cloud-id" {
 variable "yandex-cloud-zone" {
   default = "ru-central1-a"
 }
+
+# Variable to change.
+variable "test-var" {
+  default = ""
+}
