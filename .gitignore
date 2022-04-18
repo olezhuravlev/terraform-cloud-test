@@ -1,1 +1,9 @@
 .idea/
+.terraform.*
+.terraform
+terraform.*
+
+#Include this file in your version control repository
+#so that Terraform can guarantee to make the same selections by default when
+#you run "terraform init" in the future.
+!.terraform.lock.hcl
