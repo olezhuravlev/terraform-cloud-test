@@ -3,33 +3,8 @@ automerge: true
 parallel_plan: true
 parallel_apply: true
 projects:
-#  - name: atlantis-stage-project
   - dir: .
-    workspace: stage
+    workspace: default
     autoplan:
       when_modified: [ "*.tf" ]
       enabled: true
-    workflow: default
-  - dir: .
-    workspace: prod
-    autoplan:
-      when_modified: [ "*.tf" ]
-      enabled: true
-    workflow: default
-workflows:
-  default:
-    plan:
-      steps:
-        - run: echo "*** CLIENT - BEFORE INIT ***"
-        - init
-        - plan:
-            extra_args: [ "-lock", "false" ]
-        - run: echo "*** CLIENT - AFTER INIT ***"
-    apply:
-      steps:
-        - run: echo "*** CLIENT - BEFORE APPLY ***"
-        - apply
-        - run: echo "*** CLIENT - AFTER APPLY ***"
-allowed_regexp_prefixes:
-  - dev/
-  - staging/
