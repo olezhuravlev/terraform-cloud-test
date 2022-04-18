@@ -7,3 +7,7 @@ variable "yandex-cloud-id" {
 variable "yandex-cloud-zone" {
   default = "ru-central1-a"
 }
+
+variable "some" {
+  default = ""
+}
