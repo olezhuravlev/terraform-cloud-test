@@ -3,7 +3,7 @@ automerge: true
 parallel_plan: true
 parallel_apply: true
 projects:
-#  - name: atlantis-stage-project
+  #  - name: atlantis-stage-project
   - dir: .
     workspace: stage
     autoplan:
