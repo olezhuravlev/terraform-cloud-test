@@ -10,5 +10,5 @@ variable "yandex-cloud-zone" {
 
 # Variable to change.
 variable "test-var" {
-  default = ""
+  default = "New_Value"
 }
