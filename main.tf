@@ -17,5 +17,5 @@ provider "yandex" {
 resource "yandex_resourcemanager_folder" "terraform-folder-test" {
   cloud_id    = var.yandex-cloud-id
   name        = "netology-folder-${terraform.workspace}"
-  description = "Netology test folder"
+  description = "Netology test folder 2"
 }
